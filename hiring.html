@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dan Okundaye">
+    <meta name="description" content="Contact information for The Little Taco Shop">
+    <title>Contact Us - LTS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>WE ARE HIRING!!</h2>
+            <p>We are currently looking for a skilled chef with a preference for Mexican cuisine, who is open to a part-time role in our taco shop. Please complete the form below to express your interest in this position. <br><span class="note">Note: Applicant must be based in Abuja<span></p>
+        </article>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Job Application Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">First name:</label>
+                        <input class="job__input" type="text" name="name" id="name" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Last name:</label>
+                        <input class="job__input" type="text" name="name" id="name" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="job__input" type="email" name="email" id="email" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="date">Date of Birth:</label>
+                        <input class="job__input" type="date" name="date" id="date" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="number">Phone Number:</label>
+                        <input class="job__input" type="number" inputmode="numeric" name="number" id="number" minlength="11" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="number">Upload Your Resume:</label>
+                        <input class="job__input" type="file" name="resume" id="resume" accept="application/pdf">
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="number">Do you have prior experience making Tacos or Mexican cuisine?:</label>
+                        <div class="radios">
+                            <div class="radio">
+                                <input class="job__input" type="radio" name="select" id="yes">
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div class="radio">
+                                <input class="job__input" type="radio" name="select" id="no">
+                                <label for="no">No</label>
+                            </div>
+
+                        </div>
+                    </p>
+
+
+                </fieldset>
+                <button class="contact__btn" type="submit">Send</button>
+                <button class="contact__btn" type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Little Taco Shop</span>
+
+            </p>
+    </footer>
+</body>
+
+</html>
